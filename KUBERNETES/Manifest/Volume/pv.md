@@ -58,6 +58,8 @@ spec:
         name: pv-example
   volumes:
     - name: pv-example
+        persistentVolumeClaim:
+         claimName: pvc-example
 ````
 ````
 kubectl apply -f pv.yaml
@@ -67,5 +69,4 @@ kubectl apply -f pod.yaml
 ````
 kunectl describe pod <pod-name>
 ````
-      persistentVolumeClaim:
-        claimName: pvc-example
+
