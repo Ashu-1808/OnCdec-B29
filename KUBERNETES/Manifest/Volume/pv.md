@@ -51,15 +51,17 @@ metadata:
   name: mypod
 spec:
   containers:
-    - name: myfrontend
-      image: nginx
-      volumeMounts:
-      - mountPath: "/var/www/html"
-        name: pv-example
+  - name: myfrontend
+    image: nginx
+    volumeMounts:
+    - mountPath: "/var/www/html"
+      name: pv-example
+
   volumes:
-    - name: pv-example
-        persistentVolumeClaim:
-         claimName: pvc-example
+  - name: pv-example
+    persistentVolumeClaim:
+      claimName: pvc-example
+
 ````
 ````
 kubectl apply -f pv.yaml
