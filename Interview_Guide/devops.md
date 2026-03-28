@@ -93,6 +93,7 @@ __Kubernetes__
      You are troubleshooting a performance issue in a Kubernetes cluster. Walk me through the steps you would take to identify the root cause and optimize the cluster's performance.
 
 ```
+__Terraform__
 ```YAML
   common:
     What is Terraform, and how does it differ from other infrastructure-as-code (IaC) tools?
